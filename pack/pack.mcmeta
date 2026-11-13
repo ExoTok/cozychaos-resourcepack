@@ -1,0 +1,13 @@
+{
+  "pack": {
+    "description": "§6CozyChaos §7Server-Pack",
+    "min_format": [
+      97,
+      1
+    ],
+    "max_format": [
+      97,
+      1
+    ]
+  }
+}

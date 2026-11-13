@@ -1,0 +1,64 @@
+name: Pack veröffentlichen
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Neue Version (z. B. 1.0.0)"
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  veroeffentlichen:
+    runs-on: ubuntu-latest
+    env:
+      VERSION: ${{ github.event.inputs.version }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Version prüfen
+        run: |
+          if ! [[ "$VERSION" =~ ^[0-9]+\.[0-9]+(\.[0-9]+)?$ ]]; then
+            echo "::error::Version bitte als Zahl wie 1.0.0 angeben (war: $VERSION)"; exit 1
+          fi
+          if gh release view "v$VERSION" >/dev/null 2>&1; then
+            echo "::error::Version v$VERSION gibt es schon. Bitte eine neue Nummer nehmen."; exit 1
+          fi
+
+      - name: Pack prüfen
+        run: python .github/scripts/pruefen.py pack
+
+      - name: Zip und Prüfsumme bauen
+        run: |
+          NAME="CozyChaos-Resourcepack-$VERSION"
+          mkdir -p dist
+          (cd pack && zip -r -X -9 "../dist/$NAME.zip" . -x '*.DS_Store' '*Thumbs.db' '*desktop.ini')
+          (cd dist && sha1sum "$NAME.zip" > "$NAME.sha1")
+          echo "NAME=$NAME" >> "$GITHUB_ENV"
+          echo "SHA1=$(cut -d' ' -f1 dist/$NAME.sha1)" >> "$GITHUB_ENV"
+          cat "dist/$NAME.sha1"
+
+      - name: Text aus dem CHANGELOG holen
+        run: |
+          python - <<'PY'
+          import os, re
+          text = open("CHANGELOG.md", encoding="utf-8").read()
+          version = os.environ["VERSION"]
+          m = re.search(r"^## " + re.escape(version) + r"\b.*?$(.*?)(?=^## |\Z)", text, re.S | re.M)
+          notes = m.group(1).strip() if m else "(Kein Eintrag im CHANGELOG.md gefunden.)"
+          notes += "\n\n---\nSHA-1: `" + os.environ["SHA1"] + "`\n\nIm Spiel aktivieren: `/ccc pack update`"
+          open("dist/notes.md", "w", encoding="utf-8").write(notes)
+          PY
+
+      - name: Release anlegen
+        run: |
+          gh release create "v$VERSION" "dist/$NAME.zip" "dist/$NAME.sha1" \
+            --title "CozyChaos-Resourcepack $VERSION" \
+            --notes-file dist/notes.md \
+            --latest

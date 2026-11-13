@@ -1,0 +1,7 @@
+# Gebaute Dateien nicht ins Repo
+*.zip
+*.sha1
+dist/
+Thumbs.db
+desktop.ini
+.DS_Store
