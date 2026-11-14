@@ -13,6 +13,8 @@ und bietet das Pack den Spielern beim Beitreten an. In der `server.properties` w
 | Filter (Trichter) | Eisennugget am Amboss in **Filter** umbenennen (großes F) |
 | Eiswaffel | Goldene Karotte am Amboss in **Eiswaffel** umbenennen |
 | Spaghettieis | Rote-Bete-Suppe am Amboss in **Spaghettieis** umbenennen |
+| Downfall | Streitkolben (Mace) am Amboss in **Downfall** umbenennen |
+| Breakthrough | Streitkolben (Mace) am Amboss in **Breakthrough** umbenennen |
 
 ## Ordner
 ```

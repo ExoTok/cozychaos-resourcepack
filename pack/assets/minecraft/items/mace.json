@@ -1,0 +1,27 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_name",
+    "cases": [
+      {
+        "when": "Downfall",
+        "model": {
+          "type": "minecraft:model",
+          "model": "cozychaos:item/downfall"
+        }
+      },
+      {
+        "when": "Breakthrough",
+        "model": {
+          "type": "minecraft:model",
+          "model": "cozychaos:item/breakthrough"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/mace"
+    }
+  }
+}
