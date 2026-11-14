@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "cozychaos:item/heiliges_bannschwert",
+    "layer1": "cozychaos:item/heiliges_bannschwert_e"
+  }
+}

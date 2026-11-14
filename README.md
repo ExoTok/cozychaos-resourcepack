@@ -11,6 +11,8 @@ und bietet das Pack den Spielern beim Beitreten an. In der `server.properties` w
 |---|---|
 | Drachenei | automatisch, jedes Drachenei (Block und Item) |
 | Filter (Trichter) | Eisennugget am Amboss in **Filter** umbenennen (großes F) |
+| Eiswaffel | Goldene Karotte am Amboss in **Eiswaffel** umbenennen |
+| Spaghettieis | Rote-Bete-Suppe am Amboss in **Spaghettieis** umbenennen |
 
 ## Ordner
 ```
