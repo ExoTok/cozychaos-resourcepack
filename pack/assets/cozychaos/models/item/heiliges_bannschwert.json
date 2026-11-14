@@ -1,8 +1,7 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "cozychaos:item/heiliges_bannschwert",
-    "layer1": "cozychaos:item/heiliges_bannschwert_e"
+    "layer0": "cozychaos:item/heiliges_bannschwert"
   },
   "display": {
     "thirdperson_righthand": {
@@ -12,14 +11,14 @@
         55
       ],
       "translation": [
-        0.0,
-        6.07,
-        0.14
+        0,
+        6.5,
+        1.5
       ],
       "scale": [
-        1.147,
-        1.147,
-        1.147
+        1.3,
+        1.3,
+        1.3
       ]
     },
     "thirdperson_lefthand": {
@@ -29,14 +28,14 @@
         -55
       ],
       "translation": [
-        0.0,
-        6.07,
-        0.14
+        0,
+        6.5,
+        1.5
       ],
       "scale": [
-        1.147,
-        1.147,
-        1.147
+        1.3,
+        1.3,
+        1.3
       ]
     },
     "firstperson_righthand": {
@@ -47,13 +46,13 @@
       ],
       "translation": [
         1.13,
-        4.78,
-        1.71
+        4.5,
+        1.13
       ],
       "scale": [
-        0.918,
-        0.918,
-        0.918
+        0.95,
+        0.95,
+        0.95
       ]
     },
     "firstperson_lefthand": {
@@ -64,13 +63,30 @@
       ],
       "translation": [
         1.13,
-        4.78,
-        1.71
+        4.5,
+        1.13
       ],
       "scale": [
-        0.918,
-        0.918,
-        0.918
+        0.95,
+        0.95,
+        0.95
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        90,
+        0,
+        45
+      ],
+      "translation": [
+        0,
+        0,
+        -18
+      ],
+      "scale": [
+        2,
+        2,
+        2
       ]
     }
   }
