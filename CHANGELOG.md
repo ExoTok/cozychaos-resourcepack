@@ -3,6 +3,11 @@
 Neue Version: oben einen Abschnitt `## 1.x.x (Datum)` anlegen. Beim Veröffentlichen wird dieser Abschnitt
 automatisch als Text ins GitHub-Release übernommen.
 
+## 1.5.0 (19.11.2026)
+- Cola: Eine Wasserflasche mit dem Namen „Cola“ wird zum Cola-Becher zum Mitnehmen (weißer Becher mit rotem Band, Deckel, Strohhalm).
+- Pommes: Eine Ofenkartoffel mit dem Namen „Pommes“ wird zu Pommes in der roten Schachtel.
+- Milchshake: Eine Honigflasche mit dem Namen „Milchshake“ wird zum Erdbeer-Milchshake im To-go-Becher.
+
 ## 1.4.0 (14.11.2026)
 - Downfall: Ein Streitkolben (Mace) mit dem Namen „Downfall“ bekommt eine dunkle Textur mit rotem Griff.
 - Breakthrough: Ein Streitkolben (Mace) mit dem Namen „Breakthrough“ bekommt eine violett leuchtende Textur.

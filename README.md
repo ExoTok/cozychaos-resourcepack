@@ -15,6 +15,9 @@ und bietet das Pack den Spielern beim Beitreten an. In der `server.properties` w
 | Spaghettieis | Rote-Bete-Suppe am Amboss in **Spaghettieis** umbenennen |
 | Downfall | Streitkolben (Mace) am Amboss in **Downfall** umbenennen |
 | Breakthrough | Streitkolben (Mace) am Amboss in **Breakthrough** umbenennen |
+| Cola | Wasserflasche am Amboss in **Cola** umbenennen |
+| Pommes | Ofenkartoffel am Amboss in **Pommes** umbenennen |
+| Milchshake | Honigflasche am Amboss in **Milchshake** umbenennen |
 
 ## Ordner
 ```
