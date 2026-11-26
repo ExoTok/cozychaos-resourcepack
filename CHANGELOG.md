@@ -6,7 +6,7 @@ automatisch als Text ins GitHub-Release übernommen.
 ## 1.6.0 (26.11.2026)
 - Tierrüstungen verzieren: Pferderüstung (Leder, Kupfer, Eisen, Gold, Diamant, Netherit), Wolfsrüstung und
   Nautilusrüstung (Kupfer, Eisen, Gold, Diamant, Netherit) zeigen am Tier jetzt Rüstungs-Verzierungen.
-  Alle 18 Muster, die Farbe kommt wie bei Spielerrüstung vom Material. Pferd: Flanken, Rücken, Brust;
+  Alle 18 Muster, die Farbe kommt wie bei Spielerrüstung vom Material. Pferd: Flanken, Rücken, Brust, Kopf, Hals und Beine;
   Nautilus: Seiten, Schale, vorne; Wolf: Flanke und Nacken.
 - Wichtig: Damit der Schmiedetisch Tierrüstung annimmt, muss auf dem Server das Datapack
   `datapack/cozychaos-tiertrims.zip` in `world/datapacks/` liegen.
