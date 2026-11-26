@@ -18,6 +18,7 @@ und bietet das Pack den Spielern beim Beitreten an. In der `server.properties` w
 | Cola | Wasserflasche am Amboss in **Cola** umbenennen |
 | Pommes | Ofenkartoffel am Amboss in **Pommes** umbenennen |
 | Milchshake | Honigflasche am Amboss in **Milchshake** umbenennen |
+| Verzierte Tierrüstung | Pferde-, Wolfs- oder Nautilusrüstung am **Schmiedetisch** mit Vorlage + Material verzieren (braucht das Datapack auf dem Server) |
 
 ## Ordner
 ```
@@ -27,6 +28,7 @@ pack/                 <- das eigentliche Resourcepack (nur dieser Ordner landet 
   assets/
     minecraft/        <- Vanilla-Dateien, die wir ersetzen (z. B. items/iron_nugget.json)
     cozychaos/        <- unsere eigenen Modelle und Texturen
+datapack/             <- Datapack für den Server (world/datapacks/): macht Tierrüstung verzierbar
 .github/workflows/    <- die zwei Automatiken (Pack prüfen, Pack veröffentlichen)
 CHANGELOG.md          <- was sich in welcher Version geändert hat
 ```
@@ -50,6 +52,12 @@ Beispiel „Filter“ (Eisennugget):
 
 Bei jedem Hochladen läuft außerdem **Pack prüfen**: Es meldet kaputte JSON-Dateien, fehlende Texturen und
 falsche Bildgrößen, bevor etwas veröffentlicht wird.
+
+## Verzierte Tierrüstung (ab 1.6.0)
+- Texturen: `pack/assets/minecraft/textures/trims/entity/<horse_body|wolf_body|nautilus_body>/<muster>.png`,
+  Graustufen mit den 8 Grauwerten der Vanilla-Palette `trim_base`, dazu je eine `.png.mcmeta` mit
+  `{"palette": {"base_palette": "trim_base"}}`. Die Materialfarbe setzt das Spiel selbst ein.
+- Datapack `datapack/cozychaos-tiertrims.zip` erweitert den Item-Tag `minecraft:trimmable_armor` um alle Tierrüstungen.
 
 ## Regeln
 - Einzigartige Items dürfen eigene Texturen bekommen (derzeit: Drachenei).

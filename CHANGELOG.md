@@ -3,6 +3,14 @@
 Neue Version: oben einen Abschnitt `## 1.x.x (Datum)` anlegen. Beim Veröffentlichen wird dieser Abschnitt
 automatisch als Text ins GitHub-Release übernommen.
 
+## 1.6.0 (26.11.2026)
+- Tierrüstungen verzieren: Pferderüstung (Leder, Kupfer, Eisen, Gold, Diamant, Netherit), Wolfsrüstung und
+  Nautilusrüstung (Kupfer, Eisen, Gold, Diamant, Netherit) zeigen am Tier jetzt Rüstungs-Verzierungen.
+  Alle 18 Muster, die Farbe kommt wie bei Spielerrüstung vom Material. Pferd: Flanken, Rücken, Brust;
+  Nautilus: Seiten, Schale, vorne; Wolf: Flanke und Nacken.
+- Wichtig: Damit der Schmiedetisch Tierrüstung annimmt, muss auf dem Server das Datapack
+  `datapack/cozychaos-tiertrims.zip` in `world/datapacks/` liegen.
+
 ## 1.5.0 (19.11.2026)
 - Cola: Eine Wasserflasche mit dem Namen „Cola“ wird zum Cola-Becher zum Mitnehmen (weißer Becher mit rotem Band, Deckel, Strohhalm).
 - Pommes: Eine Ofenkartoffel mit dem Namen „Pommes“ wird zu Pommes in der roten Schachtel.

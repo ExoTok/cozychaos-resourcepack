@@ -77,7 +77,10 @@ for bild in sorted(PACK.rglob("*.png")):
         fehler.append(f"{bild}: keine echte PNG-Datei")
         continue
     breite, hoehe = groesse
-    animiert = Path(str(bild) + ".mcmeta").is_file()
+    meta = Path(str(bild) + ".mcmeta")
+    # Animiert nur, wenn die .mcmeta einen "animation"-Abschnitt hat (z. B. nicht bei Paletten-Texturen für Verzierungen)
+    animiert = meta.is_file() and "animation" in (daten.get(meta) or {})
+    palette = meta.is_file() and "palette" in (daten.get(meta) or {})
     if bild.name == "pack.png":
         if breite != hoehe:
             hinweise.append(f"{bild}: Pack-Symbol sollte quadratisch sein ({breite}x{hoehe})")
@@ -85,7 +88,7 @@ for bild in sorted(PACK.rglob("*.png")):
     if animiert:
         if hoehe % breite != 0:
             fehler.append(f"{bild}: animierte Textur, Höhe muss ein Vielfaches der Breite sein ({breite}x{hoehe})")
-    elif breite != hoehe:
+    elif breite != hoehe and not palette:
         hinweise.append(f"{bild}: nicht quadratisch ({breite}x{hoehe}) – gewollt?")
     if breite & (breite - 1):
         hinweise.append(f"{bild}: Breite {breite} ist keine Zweierpotenz (16, 32, 64 ...)")
