@@ -1,0 +1,361 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:trim_material",
+    "cases": [
+      {
+        "when": "minecraft:quartz",
+        "model": {
+          "type": "minecraft:condition",
+          "property": "minecraft:has_component",
+          "component": "minecraft:dyed_color",
+          "on_false": {
+            "type": "minecraft:model",
+            "model": "cozychaos:item/trim/wolf_armor_quartz"
+          },
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "cozychaos:item/trim/wolf_armor_dyed_quartz",
+            "tints": [
+              {
+                "type": "minecraft:constant",
+                "value": -1
+              },
+              {
+                "type": "minecraft:dye",
+                "default": 0
+              },
+              {
+                "type": "minecraft:constant",
+                "value": -1
+              }
+            ]
+          }
+        }
+      },
+      {
+        "when": "minecraft:iron",
+        "model": {
+          "type": "minecraft:condition",
+          "property": "minecraft:has_component",
+          "component": "minecraft:dyed_color",
+          "on_false": {
+            "type": "minecraft:model",
+            "model": "cozychaos:item/trim/wolf_armor_iron"
+          },
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "cozychaos:item/trim/wolf_armor_dyed_iron",
+            "tints": [
+              {
+                "type": "minecraft:constant",
+                "value": -1
+              },
+              {
+                "type": "minecraft:dye",
+                "default": 0
+              },
+              {
+                "type": "minecraft:constant",
+                "value": -1
+              }
+            ]
+          }
+        }
+      },
+      {
+        "when": "minecraft:netherite",
+        "model": {
+          "type": "minecraft:condition",
+          "property": "minecraft:has_component",
+          "component": "minecraft:dyed_color",
+          "on_false": {
+            "type": "minecraft:model",
+            "model": "cozychaos:item/trim/wolf_armor_netherite"
+          },
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "cozychaos:item/trim/wolf_armor_dyed_netherite",
+            "tints": [
+              {
+                "type": "minecraft:constant",
+                "value": -1
+              },
+              {
+                "type": "minecraft:dye",
+                "default": 0
+              },
+              {
+                "type": "minecraft:constant",
+                "value": -1
+              }
+            ]
+          }
+        }
+      },
+      {
+        "when": "minecraft:redstone",
+        "model": {
+          "type": "minecraft:condition",
+          "property": "minecraft:has_component",
+          "component": "minecraft:dyed_color",
+          "on_false": {
+            "type": "minecraft:model",
+            "model": "cozychaos:item/trim/wolf_armor_redstone"
+          },
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "cozychaos:item/trim/wolf_armor_dyed_redstone",
+            "tints": [
+              {
+                "type": "minecraft:constant",
+                "value": -1
+              },
+              {
+                "type": "minecraft:dye",
+                "default": 0
+              },
+              {
+                "type": "minecraft:constant",
+                "value": -1
+              }
+            ]
+          }
+        }
+      },
+      {
+        "when": "minecraft:copper",
+        "model": {
+          "type": "minecraft:condition",
+          "property": "minecraft:has_component",
+          "component": "minecraft:dyed_color",
+          "on_false": {
+            "type": "minecraft:model",
+            "model": "cozychaos:item/trim/wolf_armor_copper"
+          },
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "cozychaos:item/trim/wolf_armor_dyed_copper",
+            "tints": [
+              {
+                "type": "minecraft:constant",
+                "value": -1
+              },
+              {
+                "type": "minecraft:dye",
+                "default": 0
+              },
+              {
+                "type": "minecraft:constant",
+                "value": -1
+              }
+            ]
+          }
+        }
+      },
+      {
+        "when": "minecraft:gold",
+        "model": {
+          "type": "minecraft:condition",
+          "property": "minecraft:has_component",
+          "component": "minecraft:dyed_color",
+          "on_false": {
+            "type": "minecraft:model",
+            "model": "cozychaos:item/trim/wolf_armor_gold"
+          },
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "cozychaos:item/trim/wolf_armor_dyed_gold",
+            "tints": [
+              {
+                "type": "minecraft:constant",
+                "value": -1
+              },
+              {
+                "type": "minecraft:dye",
+                "default": 0
+              },
+              {
+                "type": "minecraft:constant",
+                "value": -1
+              }
+            ]
+          }
+        }
+      },
+      {
+        "when": "minecraft:emerald",
+        "model": {
+          "type": "minecraft:condition",
+          "property": "minecraft:has_component",
+          "component": "minecraft:dyed_color",
+          "on_false": {
+            "type": "minecraft:model",
+            "model": "cozychaos:item/trim/wolf_armor_emerald"
+          },
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "cozychaos:item/trim/wolf_armor_dyed_emerald",
+            "tints": [
+              {
+                "type": "minecraft:constant",
+                "value": -1
+              },
+              {
+                "type": "minecraft:dye",
+                "default": 0
+              },
+              {
+                "type": "minecraft:constant",
+                "value": -1
+              }
+            ]
+          }
+        }
+      },
+      {
+        "when": "minecraft:diamond",
+        "model": {
+          "type": "minecraft:condition",
+          "property": "minecraft:has_component",
+          "component": "minecraft:dyed_color",
+          "on_false": {
+            "type": "minecraft:model",
+            "model": "cozychaos:item/trim/wolf_armor_diamond"
+          },
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "cozychaos:item/trim/wolf_armor_dyed_diamond",
+            "tints": [
+              {
+                "type": "minecraft:constant",
+                "value": -1
+              },
+              {
+                "type": "minecraft:dye",
+                "default": 0
+              },
+              {
+                "type": "minecraft:constant",
+                "value": -1
+              }
+            ]
+          }
+        }
+      },
+      {
+        "when": "minecraft:lapis",
+        "model": {
+          "type": "minecraft:condition",
+          "property": "minecraft:has_component",
+          "component": "minecraft:dyed_color",
+          "on_false": {
+            "type": "minecraft:model",
+            "model": "cozychaos:item/trim/wolf_armor_lapis"
+          },
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "cozychaos:item/trim/wolf_armor_dyed_lapis",
+            "tints": [
+              {
+                "type": "minecraft:constant",
+                "value": -1
+              },
+              {
+                "type": "minecraft:dye",
+                "default": 0
+              },
+              {
+                "type": "minecraft:constant",
+                "value": -1
+              }
+            ]
+          }
+        }
+      },
+      {
+        "when": "minecraft:amethyst",
+        "model": {
+          "type": "minecraft:condition",
+          "property": "minecraft:has_component",
+          "component": "minecraft:dyed_color",
+          "on_false": {
+            "type": "minecraft:model",
+            "model": "cozychaos:item/trim/wolf_armor_amethyst"
+          },
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "cozychaos:item/trim/wolf_armor_dyed_amethyst",
+            "tints": [
+              {
+                "type": "minecraft:constant",
+                "value": -1
+              },
+              {
+                "type": "minecraft:dye",
+                "default": 0
+              },
+              {
+                "type": "minecraft:constant",
+                "value": -1
+              }
+            ]
+          }
+        }
+      },
+      {
+        "when": "minecraft:resin",
+        "model": {
+          "type": "minecraft:condition",
+          "property": "minecraft:has_component",
+          "component": "minecraft:dyed_color",
+          "on_false": {
+            "type": "minecraft:model",
+            "model": "cozychaos:item/trim/wolf_armor_resin"
+          },
+          "on_true": {
+            "type": "minecraft:model",
+            "model": "cozychaos:item/trim/wolf_armor_dyed_resin",
+            "tints": [
+              {
+                "type": "minecraft:constant",
+                "value": -1
+              },
+              {
+                "type": "minecraft:dye",
+                "default": 0
+              },
+              {
+                "type": "minecraft:constant",
+                "value": -1
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:condition",
+      "component": "minecraft:dyed_color",
+      "on_false": {
+        "type": "minecraft:model",
+        "model": "minecraft:item/wolf_armor"
+      },
+      "on_true": {
+        "type": "minecraft:model",
+        "model": "minecraft:item/wolf_armor_dyed",
+        "tints": [
+          {
+            "type": "minecraft:constant",
+            "value": -1
+          },
+          {
+            "type": "minecraft:dye",
+            "default": 0
+          }
+        ]
+      },
+      "property": "minecraft:has_component"
+    }
+  }
+}

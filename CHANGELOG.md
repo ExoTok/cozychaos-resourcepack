@@ -3,10 +3,18 @@
 Neue Version: oben einen Abschnitt `## 1.x.x (Datum)` anlegen. Beim Veröffentlichen wird dieser Abschnitt
 automatisch als Text ins GitHub-Release übernommen.
 
+## 1.6.2 (26.11.2026)
+- Verzierte Tierrüstung im Inventar: Pferde-, Wolfs- und Nautilusrüstung zeigt die Verzierung jetzt auch im
+  Item-Symbol (Truhe, Hand, Inventar), in der Farbe des Materials – wie bei Spielerrüstung.
+
+## 1.6.1 (26.11.2026)
+- Verzierte Pferderüstung: Die Muster sitzen jetzt auch auf Kopf (Stirn, Seiten, oben), Hals (Seiten, Mähne, oben)
+  und Beinen, nicht mehr nur am Rumpf.
+
 ## 1.6.0 (26.11.2026)
 - Tierrüstungen verzieren: Pferderüstung (Leder, Kupfer, Eisen, Gold, Diamant, Netherit), Wolfsrüstung und
   Nautilusrüstung (Kupfer, Eisen, Gold, Diamant, Netherit) zeigen am Tier jetzt Rüstungs-Verzierungen.
-  Alle 18 Muster, die Farbe kommt wie bei Spielerrüstung vom Material. Pferd: Flanken, Rücken, Brust, Kopf, Hals und Beine;
+  Alle 18 Muster, die Farbe kommt wie bei Spielerrüstung vom Material. Pferd: Flanken, Rücken, Brust;
   Nautilus: Seiten, Schale, vorne; Wolf: Flanke und Nacken.
 - Wichtig: Damit der Schmiedetisch Tierrüstung annimmt, muss auf dem Server das Datapack
   `datapack/cozychaos-tiertrims.zip` in `world/datapacks/` liegen.

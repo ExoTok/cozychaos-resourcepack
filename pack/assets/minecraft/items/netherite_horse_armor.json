@@ -1,0 +1,89 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:trim_material",
+    "cases": [
+      {
+        "when": "minecraft:quartz",
+        "model": {
+          "type": "minecraft:model",
+          "model": "cozychaos:item/trim/netherite_horse_armor_quartz"
+        }
+      },
+      {
+        "when": "minecraft:iron",
+        "model": {
+          "type": "minecraft:model",
+          "model": "cozychaos:item/trim/netherite_horse_armor_iron"
+        }
+      },
+      {
+        "when": "minecraft:netherite",
+        "model": {
+          "type": "minecraft:model",
+          "model": "cozychaos:item/trim/netherite_horse_armor_netherite"
+        }
+      },
+      {
+        "when": "minecraft:redstone",
+        "model": {
+          "type": "minecraft:model",
+          "model": "cozychaos:item/trim/netherite_horse_armor_redstone"
+        }
+      },
+      {
+        "when": "minecraft:copper",
+        "model": {
+          "type": "minecraft:model",
+          "model": "cozychaos:item/trim/netherite_horse_armor_copper"
+        }
+      },
+      {
+        "when": "minecraft:gold",
+        "model": {
+          "type": "minecraft:model",
+          "model": "cozychaos:item/trim/netherite_horse_armor_gold"
+        }
+      },
+      {
+        "when": "minecraft:emerald",
+        "model": {
+          "type": "minecraft:model",
+          "model": "cozychaos:item/trim/netherite_horse_armor_emerald"
+        }
+      },
+      {
+        "when": "minecraft:diamond",
+        "model": {
+          "type": "minecraft:model",
+          "model": "cozychaos:item/trim/netherite_horse_armor_diamond"
+        }
+      },
+      {
+        "when": "minecraft:lapis",
+        "model": {
+          "type": "minecraft:model",
+          "model": "cozychaos:item/trim/netherite_horse_armor_lapis"
+        }
+      },
+      {
+        "when": "minecraft:amethyst",
+        "model": {
+          "type": "minecraft:model",
+          "model": "cozychaos:item/trim/netherite_horse_armor_amethyst"
+        }
+      },
+      {
+        "when": "minecraft:resin",
+        "model": {
+          "type": "minecraft:model",
+          "model": "cozychaos:item/trim/netherite_horse_armor_resin"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/netherite_horse_armor"
+    }
+  }
+}
